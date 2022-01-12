@@ -1,0 +1,210 @@
+:root {
+  --black: #171919;
+  --beige: #e2e4dc;
+  --gandalf: #7e7f7f;
+  --red: #d81a22;
+  --yellow: #feca53;
+  --orange: #f1ad48;
+  --light-red: #ec5144;
+}
+
+@font-face {
+  src: url('./assets/IMFellEnglish-Regular.ttf');
+  font-family: 'IMFell';
+}
+
+@font-face {
+  font-family: 'Botw';
+  src: url('./assets/The-Wild-Breath-of-Zelda.otf');
+}
+
+@font-face {
+  font-family: 'Aniron';
+  src: url('./assets/Aniron.ttf');
+}
+
+@font-face {
+  font-family: 'tngan';
+  src: url('./assets/tngan.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E2E4DC;
+  color: var(--black);
+  font-family: 'IMFELL';
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Botw';
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.botw {
+  font-family: 'Botw';
+  text-transform: uppercase;
+}
+
+.aniron {
+  font-family: 'Aniron';
+}
+
+.tngan {
+  font-family: 'tngan';
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/scratched-surface-texture.jpg');
+  background-size: 130%;
+  background-position: 0% 50%;
+  mix-blend-mode: color-burn;
+  opacity: 40%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+header {
+
+  border-bottom: 2px solid var(--black);
+}
+
+main {
+  padding: 2em;
+}
+
+main h1 {
+  font-size: 4rem;
+}
+
+main p {
+  margin-bottom: 2rem;
+}
+
+main h2 {
+  font-size: 3rem;
+}
+
+main h3 {
+  font-size: 2.5rem;
+}
+
+main h4 {
+  font-size: 2rem;
+}
+
+h3.fix {
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  gap: 4rem;
+}
+
+.secondary li span:first-child {
+  font-size: 5rem;
+}
+
+.secondary li span:last-child {
+  transform: translateY(-2rem);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+}
+
+ul > li span {
+  display: block;
+}
+
+ul > li span:first-child {
+  font-size: 8rem;
+  font-family: 'Aniron';
+}
+
+ul > li span:last-child {
+  transform: translateY(-4rem);
+}
+
+li.stroke > span:first-child {
+  -webkit-text-stroke: 1px var(--black);
+  -webkit-text-fill-color: var(--beige);
+}
+
+.gandalf {
+  color: var(--gandalf);
+}
+
+.red {
+  color: var(--red);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.light-red {
+  color: var(--light-red);
+}
+
+.ring {
+  width: 20em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring img {
+  width: 100%;
+}
+
+.ring img:first-child {
+  position: absolute;
+  width: 36%;
+}
+
+.balrog {
+  width: 25em;
+}
+
+.background-texture {
+  width: 20em;
+}
+ 
+aside {
+  border-right: 2px solid var(--black);
+  padding: 1.5rem;
+}
+
+aside div {
+  position: sticky;
+  top: 1.5rem;
+}
+
+aside div nav ul {
+  flex-direction: column;
+}
+
+aside div nav ul li {
+  font-size: 1.25rem;
+}
+
+footer {
+  border-top: 2px solid var(--black);
+}
