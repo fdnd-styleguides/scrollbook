@@ -1,0 +1,287 @@
+* {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "FrizQuadrataC-Bold";
+  src: url(assets/fonts/FrizQuadrataC-Bold.otf);
+}
+
+@font-face {
+  font-family: "FrizQuadrataC-Bold-Italic";
+  src: url(assets/fonts/FrizQuadrataC-Bold-Italic.otf);
+}
+
+@font-face {
+  font-family: "GT-Sectra-Regular";
+  src: url(assets/fonts/GT-Sectra-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Autography";
+  src: url(assets/fonts/Autography.otf);
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --yellow: #fad000;
+  --lighter-yellow: #f9c900;
+  --darker-yellow: #f7bc00;
+  --red: #ec3d2b;
+  --darker-red: #a12133;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "FrizQuadrataC-Bold", sans-serif;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+p {
+  font-family: "GT-Sectra-Regular", sans-serif;
+}
+
+.autography {
+  font-family: "Autography", sans-serif;
+}
+
+header {
+  background-color: var(--darker-yellow);
+}
+
+aside {
+  background-color: var(--lighter-yellow);
+  padding: 1.5em;
+}
+
+aside > div {
+  top: 1.5rem;
+  position: sticky;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+  padding: 1.5em;
+}
+
+h1 {
+  padding-top: 1em;
+}
+
+#colors h3 {
+  margin: 1em 0 0.5em;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+section > ul {
+  margin: 1em 0;
+  display: flex;
+}
+
+section ul > li {
+  padding: 0 2em;
+}
+
+.color-black {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.color-black:before {
+  border-bottom: 43.3px solid var(--black);
+}
+
+.color-black:after {
+  border-top: 43.3px solid var(--black);
+}
+
+.color-white {
+  background-color: var(--white);
+}
+
+.color-white:before {
+  border-bottom: 43.3px solid var(--white);
+}
+
+.color-white:after {
+  border-top: 43.3px solid var(--white);
+}
+
+.color-darker-yellow {
+  background-color: var(--darker-yellow);
+}
+
+.color-darker-yellow:before {
+  border-bottom: 43.3px solid var(--darker-yellow);
+}
+
+.color-darker-yellow:after {
+  border-top: 43.3px solid var(--darker-yellow);
+}
+
+.color-red {
+  background-color: var(--red);
+}
+
+.color-red:before {
+  border-bottom: 43.3px solid var(--red);
+}
+
+.color-red:after {
+  border-top: 43.3px solid var(--red);
+}
+
+.color-darker-red {
+  background-color: var(--darker-red);
+  color: var(--white);
+}
+
+.color-darker-red:before {
+  border-bottom: 43.3px solid var(--darker-red);
+}
+
+.color-darker-red:after {
+  border-top: 43.3px solid var(--darker-red);
+}
+
+.color-lighter-yellow {
+  background-color: var(--lighter-yellow);
+}
+
+.color-lighter-yellow:before {
+  border-bottom: 43.3px solid var(--lighter-yellow);
+}
+
+.color-lighter-yellow:after {
+  border-top: 43.3px solid var(--lighter-yellow);
+}
+
+.color-yellow {
+  background-color: var(--yellow);
+}
+
+.color-yellow:before {
+  border-bottom: 43.3px solid var(--yellow);
+}
+
+.color-yellow:after {
+  border-top: 43.3px solid var(--yellow);
+}
+
+
+.hexagon-transparent {
+  position: relative;
+  width: 150px;
+  height: 86.6px;
+  margin: 43.3px 0;
+  border-left: solid 2px #333333;
+  border-right: solid 2px #333333;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon-transparent:before,
+.hexagon-transparent:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 106.07px;
+  height: 106.07px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 19px;
+}
+
+.hexagon-transparent:before {
+  top: -53.033px;
+  border-top: solid 2px #333333;
+  border-right: solid 2px #333333;
+}
+
+.hexagon-transparent:after {
+  bottom: -53.033px;
+  border-bottom: solid 2px #333333;
+  border-left: solid 2px #333333;
+}
+
+.hexagon {
+  position: relative;
+  width: 150px;
+  height: 86.6px;
+  margin: 43.3px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+}
+
+#typography h1 {
+  font-size: 4rem;
+}
+
+#typography h3 {
+  font-size: 2.5rem;
+}
+#typography h4 {
+  font-size: 2rem;
+}
+#typography .autography {
+  font-size: 1.5rem;
+}
+#typography p {
+  font-size: 1.125rem;
+}
+
+#images {
+  width: 100%;
+}
+
+#images img {
+  max-width: 20%;
+}
+
+#images .hammer {
+  max-width: 40%;
+}
